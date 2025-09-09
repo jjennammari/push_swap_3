@@ -1,0 +1,21 @@
+# Compiled object files
+*.o
+
+# Executables
+bitmasking_tutorial
+bitmasking_demo
+bitmasking_exercises
+push_swap
+
+# Temporary files
+*~
+.DS_Store
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.a
+*.so

@@ -57,4 +57,22 @@ void    swap_a(t_node **a);
 void    swap_b(t_node **b);
 void    swap_ab(t_node **a, t_node **b);
 
+	/*\ bitmasking and binary conversion functions \*/
+
+int     get_bit_count(int num);
+int     get_max_bits(t_node *stack);
+int     is_bit_set(int num, int bit_position);
+void    number_to_binary_array(int num, int *binary_array, int array_size);
+void    print_binary_representation(int num, int bits);
+int     extract_bit(int num, int bit_position);
+int     extract_bit_range(int num, int start_bit, int num_bits);
+int     count_set_bits(int num);
+int     count_set_bits_fast(int num);
+int     is_power_of_2(int num);
+int     find_lowest_set_bit(int num);
+int     create_mask(int num_bits);
+int     get_bit_digit(int num, int bit_position);
+void    demonstrate_radix_bitmasking(t_node *stack);
+void    convert_index_to_binary(int index, int max_bits);
+
 #endif

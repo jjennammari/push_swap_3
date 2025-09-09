@@ -1,4 +1,5 @@
 #include "push_swap.h"
+#include <limits.h>
 
 void	create_array(int *arr, char **argv, int size)
 {
@@ -11,7 +12,7 @@ void	create_array(int *arr, char **argv, int size)
         if (!check_if_number(argv[i + 1]))
             error_array(arr, size);
         nbr = ft_atol(argv[i + 1]);
-        if ((nbr < -2147483648) || (nbr > 2147483647))
+        if ((nbr < INT_MIN) || (nbr > INT_MAX))
             error_array(arr, size);
         if (check_if_double(arr, (int)nbr))
             error_array(arr, size);
